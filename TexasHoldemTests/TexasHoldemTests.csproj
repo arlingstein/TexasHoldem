@@ -52,7 +52,6 @@
   </Choose>
   <ItemGroup>
     <Compile Include="CardTests.cs" />
-    <Compile Include="Game.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

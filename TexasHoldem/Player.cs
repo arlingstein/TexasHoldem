@@ -9,17 +9,37 @@ using System.Threading.Tasks;
 
 namespace TexasHoldem
 {
-    class Player
+    public class Player
     {
-        private int[] _PlayersHand;
-        private int _PlayersBet;
-        //with this players bet, it may get repetitive with the game object... should have a better way of keep this. 
-        private int _PlayersAvailableMoney; 
-        public Player(int[] PlayersHand, int PlayersBet, int AvailableMoney)
+        private char[] _PlayersHand;
+        private int _PlayersAvailableMoneyToBet;
+        private int _Bet;
+        public Player(char[] PlayersHand, int AvailableMoneyToBet, int Bet)
         {
-            this._PlayersHand = PlayersHand[];
-            this._PlayersBet = PlayersBet;
-            this._PlayersAvailableMoney = AvailableMoney; 
+            this._PlayersHand = PlayersHand;
+            this._PlayersAvailableMoneyToBet = AvailableMoneyToBet;
+            this._Bet = Bet;
+        }
+        //checks that the player has enough money to place their bet
+        public bool CheckBetValidity()
+        {
+            var Player1 = new Player(_PlayersHand, _PlayersAvailableMoneyToBet, _Bet);
+            if (Player1._PlayersAvailableMoneyToBet >=  Player1._Bet)
+            {
+                return true;
+            }
+            else return false;
+        }
+        //returns the player's available money after a bet
+        public int PlayerPlaceBet()
+        {
+            if (CheckBetValidity() == true)
+            {
+                _PlayersAvailableMoneyToBet = _Bet - _PlayersAvailableMoneyToBet;
+                return _PlayersAvailableMoneyToBet;
+            }
+            else return 0; 
         }
     }
 }
+
