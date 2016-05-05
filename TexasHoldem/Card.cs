@@ -20,7 +20,6 @@ namespace TexasHoldem
                     case 's': case 'h': case 'd': case 'c': { suit = value; break; }
                     default: throw new Exception("Card Suit Incorrect");
                 }
-
             }
         }
         public char Rank
@@ -49,7 +48,6 @@ namespace TexasHoldem
                 }
              }
         }
-
         public Card(char rank, char Suit)
         {
             this.Rank = rank;

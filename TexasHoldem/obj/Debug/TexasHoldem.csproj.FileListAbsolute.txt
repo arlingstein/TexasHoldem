@@ -8,3 +8,13 @@ C:\Users\hamilton\Documents\Visual Studio 2015\Projects\TexasHoldem\TexasHoldem\
 C:\Users\hamilton\Documents\Visual Studio 2015\Projects\TexasHoldem\TexasHoldem\bin\Debug\Iesi.Collections.xml
 C:\Users\hamilton\Documents\Visual Studio 2015\Projects\TexasHoldem\TexasHoldem\bin\Debug\NHibernate.xml
 C:\Users\hamilton\Documents\Visual Studio 2015\Projects\TexasHoldem\TexasHoldem\obj\Debug\TexasHoldem.csprojResolveAssemblyReference.cache
+C:\Users\Rachel\Documents\Visual Studio 2015\Projects\TexasHoldEm\TexasHoldem\TexasHoldem\bin\Debug\TexasHoldem.exe.config
+C:\Users\Rachel\Documents\Visual Studio 2015\Projects\TexasHoldEm\TexasHoldem\TexasHoldem\obj\Debug\TexasHoldem.exe
+C:\Users\Rachel\Documents\Visual Studio 2015\Projects\TexasHoldEm\TexasHoldem\TexasHoldem\obj\Debug\TexasHoldem.pdb
+C:\Users\Rachel\Documents\Visual Studio 2015\Projects\TexasHoldEm\TexasHoldem\TexasHoldem\bin\Debug\TexasHoldem.exe
+C:\Users\Rachel\Documents\Visual Studio 2015\Projects\TexasHoldEm\TexasHoldem\TexasHoldem\bin\Debug\TexasHoldem.pdb
+C:\Users\Rachel\Documents\Visual Studio 2015\Projects\TexasHoldEm\TexasHoldem\TexasHoldem\bin\Debug\Iesi.Collections.dll
+C:\Users\Rachel\Documents\Visual Studio 2015\Projects\TexasHoldEm\TexasHoldem\TexasHoldem\bin\Debug\NHibernate.dll
+C:\Users\Rachel\Documents\Visual Studio 2015\Projects\TexasHoldEm\TexasHoldem\TexasHoldem\bin\Debug\Iesi.Collections.xml
+C:\Users\Rachel\Documents\Visual Studio 2015\Projects\TexasHoldEm\TexasHoldem\TexasHoldem\bin\Debug\NHibernate.xml
+C:\Users\Rachel\Documents\Visual Studio 2015\Projects\TexasHoldEm\TexasHoldem\TexasHoldem\obj\Debug\TexasHoldem.csprojResolveAssemblyReference.cache

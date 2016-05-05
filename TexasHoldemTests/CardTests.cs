@@ -15,7 +15,8 @@ namespace TexasHoldem.Tests
         public void CardTest()
         {
             var QueenOfHearts = new Card('Q', 'H');
-            Assert.AreEqual(QueenOfHearts.Rank, 'q');           
+            Assert.AreEqual(QueenOfHearts.Rank, 'q');
+            Assert.AreEqual(QueenOfHearts.Suit, 'h'); 
         }
     }
 }
