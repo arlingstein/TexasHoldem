@@ -2,6 +2,12 @@
 
 Hand -> Player -> Game
 
+Objects: 
+Player (hand, money, bets of players)
+Money in Pot (collected money from players' bets; can i  do big and small blinds here?)
+Community Cards (with with dealer's shuffle Arlington was talking about, array of cards that increases in length each round)
+Game(has 4 rounds - do round objects first then refactor for a game object?)
+
 Game Rounds: Pre-Flop, Flop, Turn, River
 possible objects: 
 The Game itself doesn't need to have an object - this would be a huge object, which would make things unneedlessly complicated. The round title could be an argument for the game if that fits in the design, but the community cards, bets, players, etc. should all be their own constructed objects that the game uses. Keep things simple, and only go complicated when needed. 

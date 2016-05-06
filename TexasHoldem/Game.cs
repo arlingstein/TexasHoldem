@@ -11,29 +11,29 @@ namespace TexasHoldem
         private string _Round;
         private char[] _CommunityCards;
         private int[] _PlayersScores;
-        public Game(string Round, char[] CommunityCards, int[] PlayerScores)
-        {
-            this._Round = Round;
-            this._CommunityCards = CommunityCards;
-            this._PlayersScores = PlayerScores;
-        }
-        //I can also do one of these for the round names... but the switch statement would be nice here.  
-        public int NumberOfCommunityCards(string round)
+        //public Game(string Round, char[] CommunityCards, int[] PlayerScores)
+        //{
+        //    this._Round = Round;
+        //    this._CommunityCards = CommunityCards;
+        //    this._PlayersScores = PlayerScores;
+        //}
+        //I do not like this object. Sloppy.  
+        public int NumberOfCommunityCards(int round)
         {
             var numberOfCards = 0;
-            if (round == "PreFlop")
+            if (round == 1)//these numbers are here for ease, not for permanent
             {
                 return numberOfCards = 2;
             }
-            if (round == "Flop")
+            if (round == 2)
             {
                 return numberOfCards = 3;
             }
-            if (round == "Turn")
+            if (round == 3)
             {
                 return numberOfCards = 4;
             }
-            if (round == "River")
+            if (round == 4)
             {
                 return numberOfCards = 5;
             }
