@@ -1,7 +1,9 @@
 bin/
 obj/
+packages/
 *.user
 *.suo
 *.dll
 bin/*
 obj/*
+packages/*
