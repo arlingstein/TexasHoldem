@@ -5,3 +5,8 @@ obj/
 *.dll
 bin/*
 obj/*
+/*.suo
+/*.cache
+/*.force
+/obj/*
+/bin/*
