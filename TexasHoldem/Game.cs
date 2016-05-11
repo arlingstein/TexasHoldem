@@ -11,20 +11,20 @@ namespace TexasHoldem
         public enum Round
         {
             preflop = 1,
-            flop    = 2,
-            turn    = 3,
-            river   = 4
+            flop = 2,
+            turn = 3,
+            river = 4
         };
 
 
         //Member Variables : What a game has
-        private Round   _round;
-        private Card[]  _CommunityCards;
+        private Round _round;
+        private Card[] _CommunityCards;
         private Dictionary<Player, int> _playerScore;
-        public int      _Pot; 
+        public int _Pot;
 
 
-        
+
         //public Game(string Round, char[] CommunityCards, int[] PlayerScores)
         //{
         //    this._Round = Round;
@@ -45,5 +45,6 @@ namespace TexasHoldem
                 return numberOfCards = 5;
             else return numberOfCards;
         };
+
     }
 }

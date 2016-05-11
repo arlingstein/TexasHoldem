@@ -1,5 +1,6 @@
 bin/
 obj/
+packages/
 *.user
 *.suo
 *.dll
@@ -10,3 +11,4 @@ obj/*
 /*.force
 /obj/*
 /bin/*
+packages/*
