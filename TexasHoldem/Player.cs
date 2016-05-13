@@ -28,8 +28,8 @@ namespace TexasHoldem
         private playerType type;
 
 
-        
-        
+
+        public Player() { }
         public Player(List<Card> PlayersHand, int AvailableMoneyToBet, int Bet)
         { 
             this._PlayersHand = PlayersHand;
