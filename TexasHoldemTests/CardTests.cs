@@ -35,7 +35,7 @@ namespace TexasHoldem.Tests
         [Test]
         public void NumberOfCommCardsTest()
         {
-            var FlopRound = new Game();
+            //var FlopRound = new Game();
             //var RoundName = FlopRound.NumberOfCommunityCards("Flop");
             //Assert.AreEqual(RoundName, 3); 
 

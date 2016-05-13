@@ -53,5 +53,15 @@ namespace TexasHoldem
             this.Rank = rank;
             this.Suit = Suit;
         }
+
+        public static Func<Card> getRandomCard = () =>
+        {
+            var rank_cards = new List<char>() {'a', 'k' , 'q', 'j' };
+            var suit_cards = new List<char>() {'s', 'h', 'd', 'c' };
+            var generateRank = (new Random().Next(0, 11) >= 7) ?(char)new Random().Next(30, 58) : rank_cards[new Random().Next(0,4)];
+            var generateSuit = suit_cards[new Random().Next(0, 4)];
+            var randomCard = new Card(generateRank, generateSuit);
+            return randomCard;
+        };
     }
 }

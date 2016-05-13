@@ -10,8 +10,12 @@ namespace TexasHoldem
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(char.ToLower('3'));
-            var AceOfSpades = new Card('A', 'S');
+            var card = Card.getRandomCard();
+            Console.Write(card.Rank +", " );
+            Console.WriteLine(card.Suit);
+
+            var playerList = new List<Player>() { new Player() };
+            Game.start(playerList);
         }
     }
 }
