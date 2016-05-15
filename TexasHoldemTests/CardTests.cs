@@ -38,8 +38,28 @@ namespace TexasHoldem.Tests
             //var FlopRound = new Game();
             //var RoundName = FlopRound.NumberOfCommunityCards("Flop");
             //Assert.AreEqual(RoundName, 3); 
+        }
 
+        [Test]
+        public void DealCardsWithOnePlayer()
+        {
+            Game g = Game.start(new List<Player>() {
+          new Player() {
+            _PlayersHand = new List<Card>(),
+            _PlayersAvailableMoneyToBet = 100,
+            _Bet = 0,
+            type = Player.playerType.small_blind
+          }
+        });
+            var players = g.DealCards();
+            Assert.AreEqual(2, players.First()._PlayersHand.Count);
 
+        }
+
+        [Test]
+        public void testShuffle()
+        {
+            //Needs to be done
         }
     }
 }

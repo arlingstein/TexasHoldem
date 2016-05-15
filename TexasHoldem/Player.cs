@@ -22,10 +22,10 @@ namespace TexasHoldem
 
 
         //Member Variables
-        private List<Card> _PlayersHand;
-        private int _PlayersAvailableMoneyToBet;
-        private int _Bet;
-        private playerType type;
+        public List<Card> _PlayersHand;
+        public int _PlayersAvailableMoneyToBet;
+        public int _Bet;
+        public playerType type;
 
 
 
@@ -35,7 +35,6 @@ namespace TexasHoldem
             this._PlayersHand = PlayersHand;
             this._PlayersAvailableMoneyToBet = AvailableMoneyToBet;
             this._Bet = Bet;
-            
         }
         //checks that the player has enough money to place their bet
         public bool CheckBetValidity()
@@ -43,11 +42,6 @@ namespace TexasHoldem
             var Player1 = new Player(_PlayersHand, _PlayersAvailableMoneyToBet, _Bet);
 
             return (Player1._PlayersAvailableMoneyToBet >= Player1._Bet);
-            //if (Player1._PlayersAvailableMoneyToBet >=  Player1._Bet)
-            //{
-            //    return true;
-            //}
-            //else return false;
         }
         //returns the player's available money after a bet //change to place bet when we have placebet logic
         public int getAvailableMoney()
