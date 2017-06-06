@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TexasHoldem
 {
-    public class Card
+    public class Card : IComparable
     {
         private char suit;
         private char rank;
@@ -54,6 +54,12 @@ namespace TexasHoldem
             this.Suit = Suit;
         }
 
+        public Card(string card) : this(card.First(), card.Skip(1).First())
+        {
+            if (card.Length != 2)
+                throw new Exception("Card format not valid");
+        }
+
         public static Func<Card> getRandomCard = () =>
         {
             var rank_cards = new List<char>() {'a', 'k' , 'q', 'j' };
@@ -63,5 +69,17 @@ namespace TexasHoldem
             var randomCard = new Card(generateRank, generateSuit);
             return randomCard;
         };
+
+        public int CompareTo(object obj)
+        {
+            Card cardToCompare = obj as Card;
+            return getNumericValueOfRank(this.Rank) - getNumericValueOfRank(cardToCompare.Rank);
+        }
+
+        private int getNumericValueOfRank(char rank)
+        {
+            //TODO: Implement correctly
+            return 0;
+        }
     }
 }

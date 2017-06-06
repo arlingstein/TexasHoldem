@@ -18,6 +18,13 @@ namespace TexasHoldem.Tests
             Assert.AreEqual(QueenOfHearts.Rank, 'q');
             Assert.AreEqual(QueenOfHearts.Suit, 'h');
         }
+
+        [Test]
+        public void throwsCorrectExceptionWhenInstantiationStringIsGiven()
+        {
+            Assert.DoesNotThrow(() => new Card("AH"));
+            Assert.Throws(typeof(Exception), ()=> new Card("AH2334"));
+        }
         [Test]
         public void CheckBetValidityTest()
         {
